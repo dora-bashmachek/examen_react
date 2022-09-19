@@ -7,7 +7,7 @@ import {Component} from 'react';
 class Photo extends Component {
     render(){
         return(
-            <div className="photo">
+            <div className="photoes">
             <div>
             <img src={jordanPNG}/> 
             </div>

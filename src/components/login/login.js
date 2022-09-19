@@ -1,13 +1,16 @@
 import "./login.css";
 import loginPNG from "./login.webp";
 import {Component} from 'react';
+import {Link} from "react-router-dom"
+// import App from "../../App";
 
 class Login extends Component {
     render(){
         return(
+          <div>
             <div className="login">
                 <div className="photolog">
-                <img className="photo" src={loginPNG}/>
+                <img className="photologin" src={loginPNG}/>
                 </div>
                 <div className="log">
            <div className="part1">
@@ -23,16 +26,16 @@ class Login extends Component {
           <div className="group">
             <input type="password" name="password" placeholder="Write your password" />
           </div>
+          <Link to="/main">
           <button  className="card-text-button">Завершить регистрацию</button> 
-          {/* @click="createUser" */}
+          </Link>
         </div>
-        
-        <div class="flx">
-          <div class="liner"></div>
+        <div className="flx">
+          <div className="liner"></div>
           <div>OR</div>
-          <div class="liner"></div>
+          <div className="liner"></div>
         </div>
-        <div class="part2">
+        <div className="part2">
           <input
             type="email"
             name="auth_email"
@@ -45,14 +48,14 @@ class Login extends Component {
             value="1234"
             placeholder="Write your password"
           />
-          <button  class="card-text-button">Войти</button>
-          {/* @click="getAuth" */}
+          <Link to="/main">
+          <button  className="card-text-button">Войти</button>
+          </Link>
         </div>
+            </div>
             </div>
             </div>
         )
     }
 }
-
-
 export default Login;
