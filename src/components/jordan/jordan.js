@@ -1,52 +1,53 @@
 import "./jordan.css";
-import {Component} from 'react';
+import JORDANNEWS1 from "./JORDANNEWS1.jpg";
+import JORDANNEWS2 from "./JORDANNEWS2.jpeg";
+import JORDANNEWS3 from "./JORDANNEWS3.jpg";
+import JORDANNEWS4 from "./JORDANNEWS4.jpg";
+import JORDANNEWS5 from "./JORDANNEWS5.webp";
+import JORDANNEWS6 from "./JORDANNEWS6.jpg";
 
-class Jordan extends Component {
-    render(){
+// import {Component} from 'react';
+
+const Jordan =()=> {
+    const data=[            
+    {name:'JORDAN BRAND TO RELEASE SNEAKERS INSPIRED BY HERMÈS BIRKIN BAG', img: JORDANNEWS1},
+    {name:"EDITOR'S CHOICE: SPRING 2022 WOMEN'S SNEAKERS", img: JORDANNEWS2},
+    {name:'TRAVIS SCOTT SHOWED THE NEW TRAVIS SCOTT X NIKE AIR JORDAN 1 LOW', img: JORDANNEWS3},
+    {name:'ALL AIR JORDAN RELEASES IN 2021', img: JORDANNEWS4},
+    {name:'Michael Jordan and his sneakers added to PGA Tour 2K23', img: JORDANNEWS5},
+    {name:'OFF-WHITE X NIKE AIR JORDAN 5 "SAIL" TO BE RELEASED IN LATE OCTOBER', img: JORDANNEWS6}
+  ]
+  const info=data.map((data)=>{
+    return(
+        <div className="JordanNews">
+        <img alt=" tut map" src={data.img}/>
+            <div className="info">
+            {data.name}
+            </div>
+    </div>)
+  })
         return(
-            <div> 
-                <h1>LATEST JORDAN NEWS</h1>
+            <div>
+                <h1 className="zagolovok">LATEST VANS NEWS</h1>
+             <div className="information"> 
+                {info}
+            </div>     
             </div>
         )
-    }
 }
-
 export default Jordan;
 
-// import "./vans.css";
-// import VANSNEWS1 from "./VANSNEWS1.jpg";
-// import VANSNEWS2 from "./VANSNEWS2.webp";
-// import VANSNEWS3 from "./VANSNEWS3.webp";
-// import VANSNEWS4 from "./VANSNEWS4.webp";
-// import VANSNEWS5 from "./VANSNEWS5.webp";
-// import VANSNEWS6 from "./VANSNEWS6.webp";
-// // import {Component} from 'react';
+// import "./jordan.css";
+// import {Component} from 'react';
 
-// const Vans =()=> {
-//     const data=[            
-//     {name:'2022 VANS US OPEN OF SURFING', img: VANSNEWS1},
-//     {name:'VANS SKATE X DANIEL JOHNSTON COLLECTION', img: VANSNEWS2},
-//     {name:'AUTHENTIC CHINO LOOSE PANT', img: VANSNEWS3},
-//     {name:'VAULT BY VANS X DOBALE', img: VANSNEWS4},
-//     {name:'VANS HUATUNAN YEAR OF THE TIGER', img: VANSNEWS5},
-//     {name:'VANS FA ULTIMATE WAFFLE', img: VANSNEWS6}
-//   ]
-//   const info=data.map((data)=>{
-//     return(
-//         <div className="VansNews">
-//         <img alt=" tut map" src={data.img}/>
-//             <div className="info">
-//             {data.name}
-//             </div>
-//     </div>)
-//   })
+// class Jordan extends Component {
+//     render(){
 //         return(
-//             <div>
-//                 <h1 className="zagolovok">LATEST VANS NEWS</h1>
-//              <div className="information"> 
-//                 {info}
-//             </div>     
+//             <div> 
+//                 <h1>LATEST JORDAN NEWS</h1>
 //             </div>
 //         )
+//     }
 // }
-// export default Vans;
+
+// export default Jordan;

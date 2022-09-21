@@ -16,8 +16,9 @@
 }
 .log{
   position: relative;
-  top: -720px;
-  left: 1266px; 
+  /* top: -720px; */
+  top: -41%;
+  left: 66%;
   width: 32%;
 }
 input {

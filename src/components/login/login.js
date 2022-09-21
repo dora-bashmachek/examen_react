@@ -13,7 +13,7 @@ class Login extends Component {
                 <img className="photologin" src={loginPNG}/>
                 </div>
                 <div className="log">
-           <div className="part1">
+           {/* <div className="part1">
           <div className="group">
             <input className type="text" name="first" id="name" placeholder="Write your name" />
           </div>
@@ -29,12 +29,12 @@ class Login extends Component {
           <Link to="/main">
           <button  className="card-text-button">Завершить регистрацию</button> 
           </Link>
-        </div>
-        <div className="flx">
+        </div> */}
+        {/* <div className="flx">
           <div className="liner"></div>
           <div>OR</div>
           <div className="liner"></div>
-        </div>
+        </div> */}
         <div className="part2">
           <input
             type="email"

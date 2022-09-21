@@ -1,0 +1,27 @@
+img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+.information {
+    display: flex;
+    flex-wrap: wrap;
+    width: 67%;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding-top: 1%;
+}
+.ConverseNews{
+    width: 34%;
+}
+.zagolovok{
+    display: flex;
+    justify-content: center;
+}
+.info {
+    padding: 2% 0 8% 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
