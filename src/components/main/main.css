@@ -1,11 +1,11 @@
 ul{
     list-style: none;
 }
-.button {
+/* .buttons {
     display: flex;
     justify-content: space-around;
-}
-.button a {
+} */
+.buttons a {
     background-color: white;
     border: 1px solid;
     color: black;
@@ -17,9 +17,9 @@ ul{
     transition-duration: 0.4s;
     display: flex;
 }
-.button a {
+/* .buttons a {
     letter-spacing: 10px;
-}
+} */
 /* .button a:hover {
     color: #323232;
     opacity: 0.6;
@@ -30,3 +30,34 @@ ul{
 .button a:first-child{
     margin-left: 2%;
 } */
+/* .buttons {
+    background-color: white;
+    border: 1px solid;
+    color: black;
+    padding: 19px 48px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    display: flex;
+} */
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+.buttons li:hover {
+    color: #323232;
+    opacity: 0.6;
+  }
+.buttons {
+    letter-spacing: 10px;
+}
+.buttons:first-child {
+    margin-left: 0%;
+}
+
+.buttons:last-child {
+    margin-right: 7%;
+}

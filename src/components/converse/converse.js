@@ -4,7 +4,9 @@ import {Component} from 'react';
 class Converse extends Component {
     render(){
         return(
-            <div>Converse</div>
+            <div> 
+                <h1>LATEST CONVERSE NEWS</h1>
+            </div>
         )
     }
 }
